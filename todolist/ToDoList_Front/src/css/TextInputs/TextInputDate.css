@@ -1,0 +1,80 @@
+.TextInputDateContainer{
+
+	display: flex;
+
+}
+.TextInputDateHandler{
+	display: flex;
+	box-sizing: border-box;
+	position: relative;
+
+	width: 100%;
+	align-items: center;
+	padding: 1rem;
+	gap: 10px;
+
+	border: 1px solid rgba(58, 58, 58, 0.5);
+	border-radius: 8px;
+	transition: border 0.5s;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.TextInputDateContainer:hover > .TextInputDateHandler{
+	border: 1px solid #3A3A3A;
+	.TextInputDateLabel{
+		color: #3A3A3A;
+	}
+}
+.TextInputDateContainer.Disabled > .TextInputDateLabel{
+	border: 1px solid rgba(58, 58, 58, 0.5);
+	border-radius: 6px;
+}
+.TextInputDateContainer.Disabled > .TextInputDate{
+	color: rgba(58, 58, 58, 0.5);
+}
+
+.TextInputDateLabel{
+
+	padding: 0px 4px;
+	position: absolute;
+
+	font-size: 14px;
+
+	top: -10px;
+	left: 12px;
+
+	background: #F9F9F9;
+	color: rgba(58, 58, 58, 0.5);
+	transition: color 0.5s;
+}
+
+.TextInputDate{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 120%;
+
+	resize: vertical;
+	width: 100%;
+	max-height: 20rem;
+
+	font-family: "RalewayRegular" !important;
+
+	scrollbar-width: none;
+	border: none;
+	outline:none;
+	color: rgba(58, 58, 58, 0.5);
+}
+.TextInputDate:focus{
+	color: #3A3A3A;
+}
+.TextInputDate::placeholder{
+	font-weight: 500;
+	color: rgba(58, 58, 58, 0.5);
+}
+.TextInputDate:disabled{
+	color: rgba(58, 58, 58, 0.5);
+}

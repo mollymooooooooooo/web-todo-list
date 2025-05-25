@@ -1,0 +1,62 @@
+@import "../Forms/AuthorizationForm.css";
+@import "../Forms/RegistrationForm.css";
+
+.AuthorizationViewContainer{
+	position: relative;
+	background: #EFEFEF;
+	padding: 5rem 10%;
+    box-sizing: border-box;
+	min-height: 100vh;
+	align-content: center;
+}
+
+.AuthorizationViewContentHandler{
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 480px) {
+	.AuthorizationViewContainer {
+		padding-right: 4rem 2rem;
+		padding-left: 4rem 2rem;
+	}
+	.AuthorizationViewContentHandler{
+		flex-direction: column;
+		gap: 0rem;
+	}
+	.AuthorizationPhoto{
+		width: 100%;
+	}
+}
+@media (max-height: 768px){
+	.AuthorizationViewContainer {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
+@media (max-width: 768px) and (min-width: 481px) {
+	.AuthorizationViewContainer {
+		padding-right: 4rem 8% + 1rem;
+		padding-left: 4rem 8% + 1rem;
+	}
+	.AuthorizationViewContentHandler{
+		flex-direction: column;
+		gap: 0rem;
+	}
+	.AuthorizationPhoto{
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	.AuthorizationViewContainer {
+		padding-right: 8%;
+		padding-left: 8%;
+	}
+	.AuthorizationViewContentHandler{
+		gap: .75rem;
+	}
+}

@@ -1,0 +1,79 @@
+.TextInputAreaContainer{
+
+	display: flex;
+
+}
+.TextInputAreaHandler{
+	display: flex;
+	box-sizing: border-box;
+	position: relative;
+
+	width: 100%;
+	align-items: center;
+	padding: 1rem;
+	gap: 10px;
+
+	border: 1px solid rgba(58, 58, 58, 0.5);
+	border-radius: 8px;
+	transition: border 0.5s;
+}
+
+.TextInputAreaContainer:hover > .TextInputAreaHandler{
+	border: 1px solid #3A3A3A;
+	.TextInputAreaLabel{
+		color: #3A3A3A;
+	}
+}
+.TextInputAreaContainer.Disabled > .TextInputAreaLabel{
+	border: 1px solid rgba(58, 58, 58, 0.5);
+	border-radius: 6px;
+}
+.TextInputAreaContainer.Disabled > .TextInputArea{
+	color: rgba(58, 58, 58, 0.5);
+}
+
+.TextInputAreaLabel{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	padding: 0px 4px;
+	position: absolute;
+
+	font-size: 14px;
+
+	top: -10px;
+	left: 12px;
+
+	background: #F9F9F9;
+	color: rgba(58, 58, 58, 0.5);
+	transition: color 0.5s;
+}
+
+.TextInputArea{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 120%;
+
+	resize: vertical;
+	width: 100%;
+	max-height: 20rem;
+
+	field-sizing: content;
+	font-family: "RalewayRegular" !important;
+
+	scrollbar-width: none;
+	border: none;
+	outline:none;
+	color: rgba(58, 58, 58, 0.5);
+}
+.TextInputArea:focus{
+	color: #3A3A3A;
+}
+.TextInputArea::placeholder{
+	font-weight: 500;
+	color: rgba(58, 58, 58, 0.5);
+}
+.TextInputArea:disabled{
+	color: rgba(58, 58, 58, 0.5);
+}

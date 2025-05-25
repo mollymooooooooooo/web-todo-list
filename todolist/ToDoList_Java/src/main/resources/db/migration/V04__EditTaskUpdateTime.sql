@@ -1,0 +1,2 @@
+ALTER TABLE task
+ALTER COLUMN update_time DROP NOT NULL ;

@@ -1,0 +1,58 @@
+.PrimaryButtonContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2.5rem;
+
+	cursor: pointer;
+	white-space: nowrap;
+	width: 100%;
+
+	font-size: inherit;
+
+	background: #375FFF;
+	border-radius: 8px;
+	border: 0;
+	transition: 0.3s ease-out;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.PrimaryButtonContainer.small{
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+}
+.PrimaryButtonContainer:hover{
+	background: #002FEA;
+}
+.PrimaryButtonContainer:active{
+	background: #204CFF;
+}
+.PrimaryButtonContainer:disabled{
+	background: #97A9F1;
+	cursor: default;
+}
+
+.PrimaryButtonText{
+	height: 19px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: inherit;
+	line-height: 1.3rem;
+
+	cursor: inherit;
+
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+}
+.PrimaryButtonText.small{
+	line-height: 1rem;
+	text-transform: none;
+
+}

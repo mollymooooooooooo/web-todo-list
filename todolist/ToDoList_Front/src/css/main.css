@@ -1,0 +1,56 @@
+@import "TextInputs/TextInputImproved.css";
+@import "TextInputs/TextInputArea.css";
+@import "TextInputs/TextInputDate.css";
+@import "Switch/Switch.css";
+@import "Buttons/PrimaryButton.css";
+@import "Buttons/OutlinedButton.css";
+@import "Pages/AuthorizationPage.css";
+@import "Pages/MainPage.css";
+@import "Alert/Alert.css";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+.Disabled{
+
+}
+.Invalid{
+	
+}
+.Display-None{
+	display: none !important;
+}
+.root{
+	min-height: 100vh;
+}
+body{
+	min-height: 100vh;
+}
+.CursorPointer{
+	cursor: pointer;
+}
+.HelpClass{
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.weight-600{
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "RalewayRegular";
+
+	src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoRegular";
+
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
